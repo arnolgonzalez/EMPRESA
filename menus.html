@@ -2,64 +2,141 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
- <center>
-            <img src="Logo.jpg" alt="Logo" width="300" border="3">
-</center> <title>Galería de Chili's Guatemala</title>
-  
+  <title>Galería | Chili's Guatemala</title>
+  <style>
+    body {
+      background-color: #fff3e0;
+      font-family: 'Verdana', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #b71c1c;
+      padding: 20px 0;
+    }
+    header img {
+      width: 200px;
+    }
+    nav {
+      background-color: #ffcdd2;
+      padding: 20px;
+      width: 20%;
+      float: left;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+    nav h2 {
+      color: maroon;
+      font-family: 'Arial', sans-serif;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #b71c1c;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px;
+      margin-left: 20%;
+      box-sizing: border-box;
+    }
+    main h1 {
+      color: darkred;
+      font-family: 'Georgia', serif;
+      text-align: center;
+    }
+    main hr {
+      border: none;
+      border-top: 3px solid darkred;
+      width: 80%;
+      margin: 20px auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .gallery-item {
+      width: 300px;
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      border: 3px solid #b71c1c;
+      border-radius: 8px;
+    }
+    .gallery-item p {
+      margin-top: 8px;
+      font-style: italic;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #b71c1c;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .center {
+      text-align: center;
+    }
+  </style>
 </head>
-<body bgcolor="#fff3e0">
+<body>
 
+  <header>
+    <img src="Logo.jpg" alt="Logo Chili's Guatemala">
+  </header>
 
-  <table width="100%" border="0">
-    <tr>
-      <!-- Menú lateral -->
-      <td width="20%" bgcolor="#ffcdd2" valign="top">
-        <font face="Arial" size="4" color="maroon"><b>Menú</b></font><hr color="maroon">
-        <ul>
-          <li><a href="index.html" type="text/html">Principal</a></li>
-          <li><a href="menus.html" type="text/html">Galería</a></li>
-          <li><a href="ace.html" type="text/html">historia</a></li>
-          <li><a href="contac.html" type="text/html">Contáctanos</a></li>
-        </ul>
-      </td>
+  <nav>
+    <h2>Menú</h2>
+    <hr>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menus.html">Galería</a></li>
+      <li><a href="ace.html">Historia</a></li>
+      <li><a href="contac.html">Contáctanos</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h1>Galería de Chili's Guatemala</h1>
+    <hr>
+    <p class="center">Disfruta de un recorrido visual por nuestras instalaciones y platillos más representativos. ¡Chili's es el lugar ideal para disfrutar con amigos, familia y compañeros de trabajo!</p>
 
-      <!-- Contenido principal -->
-      <td valign="top" style="padding: 10px;">
-        <center>
-          <font face="Georgia" size="7" color="darkred"><b>Galería de Chili's Guatemala</b></font><br>
-          <hr color="darkred" size="3" width="80%">
-        </center>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="ambiente.jpg" alt="Ambiente Chili's">
+        <p>Ambiente cálido y acogedor en nuestra sucursal en Zona 10</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Almuerzo.webp" alt="Almuerzo en Chili's">
+        <p>El lugar perfecto para disfrutar de un almuerzo en familia</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Instalacion.jpg" alt="Instalaciones Chili's">
+        <p>Un espacio ideal para reuniones y eventos especiales</p>
+      </div>
+    </div>
 
+    <p class="center">Te invitamos a vivir la experiencia Chili's en cualquiera de nuestras sucursales. ¡Visítanos hoy mismo!</p>
 
-        <font face="Verdana" size="3">
-          <p>Disfruta de un recorrido visual por nuestras instalaciones y platillos más representativos. ¡Chili's es el lugar ideal para disfrutar con amigos, familia y compañeros de trabajo!</p>
-
-
-          <center>
-            <img src="ambiente.jpg" alt="Ambiente Chili's" width="300" border="3">
-            <p><i>Ambiente cálido y acogedor en nuestra sucursal en Zona 10</i></p>
-            <img src="Almuerzo.webp" alt="Ambiente Chili's" width="300" border="3">
-            <p><i>El lugar perfecto para disfrutar de un almuerzo en familia</i></p>
-            <img src="Instalacion.jpg" alt="Ambiente Chili's" width="300" border="3">
-            <p><i>Un espacio ideal para reuniones y eventos especiales</i></p>
-          </center>
-
-
-          <p>Te invitamos a vivir la experiencia Chili's en cualquier de nuestras sucursales. ¡Visítanos hoy mismo!</p>
-
-
-          <br><br>
-          <center>
-            <form action="index.html">
-              <input type="submit" value="Regresar al Inicio" style="font-size:16px; padding:6px;">
-            </form>
-          </center>
-        </font>
-      </td>
-    </tr>
-  </table>
-
+    <div class="center">
+      <a href="index.html" class="btn">Regresar al Inicio</a>
+    </div>
+  </main>
 
 </body>
 </html>
